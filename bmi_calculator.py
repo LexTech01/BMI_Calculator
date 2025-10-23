@@ -9,12 +9,12 @@ root.resizable(False, False)
 root.config(bg="#f0f1f5")
 
 #Icon
-img_icon =ImageTk.PhotoImage(file ="BMI/images/bmilogo.png")
+img_icon =ImageTk.PhotoImage(file ="images/bmilogo.png")
 root.iconphoto(False,img_icon)
 
 #top image
 
-img = Image.open("BMI/images/background.jpeg")
+img = Image.open("images/background.jpeg")
 img = img.resize((548, 100))
 photo = ImageTk.PhotoImage(img)
 label = tk.Label(root, image=photo,bg="#f0f1f5")
@@ -22,12 +22,12 @@ label.place(x=-10,y=-10)
 
 
 #box
-img1 = Image.open("BMI/images/box.png")
+img1 = Image.open("images/box.png")
 photo1 = ImageTk.PhotoImage(img1)
 label = tk.Label(root, image=photo1)
 label.place(x=20,y=100)
 
-img_box2 = Image.open("BMI/images/box.png")
+img_box2 = Image.open("images/box.png")
 photo2 = ImageTk.PhotoImage(img_box2)
 tk.Label(root, image=photo2).place(x=250,y=100)
 
@@ -49,7 +49,7 @@ bottom.pack(side="bottom")
 
 
 #Scale
-img_scale = Image.open("BMI/images/scale.png")
+img_scale = Image.open("images/scale.png")
 scale = ImageTk.PhotoImage(img_scale)
 tk.Label(root, image=scale,bg="#EEBF25").place(x=20,y=320)
 
@@ -67,7 +67,7 @@ def slider_change(event):
     #Person Image
 
     size=int(float(get_current_value()))
-    img_man = (Image.open("BMI/images/man_standing2.png"))
+    img_man = (Image.open("images/man_standing2.png"))
     resized_img =img_man.resize((45,30+size))
     man= ImageTk.PhotoImage(resized_img)
     sec_img.config(image=man, bg='#EEBF25')
@@ -141,7 +141,7 @@ tk.Button(root,text="Health Report",font="arial 11 bold",bg="#0073EE",fg="#00000
 
 
 
-img4 = Image.open("BMI/images/bmi_result.png")
+img4 = Image.open("images/bmi_result.png")
 newimg=img4.resize((320,97))
 result = ImageTk.PhotoImage(newimg)
 label = tk.Label(root, image=result,bg='#EEBF25')
