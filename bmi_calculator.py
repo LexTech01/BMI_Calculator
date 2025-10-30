@@ -31,6 +31,10 @@ img_box2 = Image.open("images/box.png")
 photo2 = ImageTk.PhotoImage(img_box2)
 tk.Label(root, image=photo2).place(x=250,y=100)
 
+#EntryBox Labels
+tk.Label(root, text="HEIGHT(m)", font="arial 12 bold", bg="white").place(x=80, y=130)
+tk.Label(root, text="WEIGHT(kg)", font="arial 12 bold", bg="white").place(x=310, y=130)
+
 #EntryBox
 Height=tk.StringVar()
 Weight=tk.StringVar()
